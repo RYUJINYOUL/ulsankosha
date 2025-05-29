@@ -197,7 +197,7 @@ const CalendarWithEvents = () => {
 
 
   return (
-    <div className="flex flex-col items-center w-full space-y-10 mt-20 px-4">
+    <div className="flex flex-col items-center w-full space-y-10 mt-15 px-4">
       {/* Month Header */}
       <div className="flex items-center justify-between md:w-[300px] w-full">
         <button onClick={handlePrevMonth}><ChevronLeft /></button>
@@ -237,7 +237,7 @@ const CalendarWithEvents = () => {
                       <td
                         key={dateStr}
                         onClick={() => setSelectedDate(date)}
-                        className={`align-top p-2 h-24 border border-gray-200 cursor-pointer
+                        className={`align-top p-2 md:h-20 h-16 border border-gray-200 cursor-pointer
                           ${isCurrentMonth ? 'text-black' : 'text-gray-400'}
                           ${isToday ? 'bg-blue-100' : ''}
                           ${isSelected ? 'bg-blue-300' : ''}
@@ -253,7 +253,7 @@ const CalendarWithEvents = () => {
                               .map((event, i) => (
                                 <div
                                   key={i}
-                                  className='text-12px text-[#333333]'
+                                  className='text-[12px] text-[#333333]'
                                   // {event.time.includes('교육 없음') ? 'text-gray-500' : ''}
                                 >
                                   {event.time.includes('오전')
@@ -282,7 +282,7 @@ const CalendarWithEvents = () => {
       </div>
 
       {/* Event list and Add Form */}
-      <div className="w-full max-w-[1100px] mt-10 border-t pt-4">
+      <div className="w-full max-w-[1100px] border-t ">
         <h3 className="text-lg font-semibold mb-2">
           {selectedDate.format('YYYY년 MM월 DD일')} 일정
         </h3>
