@@ -9,7 +9,7 @@ import FabButton from '@/components/ui/FabButton';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "바른염색",
+  title: "울산 건설 기초안전보건교육장",
 
   icons: {
 		icon: "/Image/mainmiddle.jpeg",

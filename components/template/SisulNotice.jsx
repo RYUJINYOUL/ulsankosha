@@ -54,14 +54,14 @@ const SisulNotice = () => {
         />  
         </div>
         <div className='flex flex-col md:w-[530px] w-full'>
-          <div className="area_text">
+          <div className="">
   <div className="txt_box">
     <div className="txt_component align_l ">
       <p className="text-[15px] text-[#666666]">
-      <div className="area_text">
+      <div className="">
   <div className="txt_box">
     <div className="text-[20px] text-[#222222] font-semibold">
-      <h4 className="">"노동부지정 울산 건설기초안전보건교육장" </h4>
+      <p className="">"노동부지정 울산 건설기초안전보건교육장" </p>
     </div>
     <div className='mt-2'/>
   </div>
