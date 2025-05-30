@@ -32,7 +32,7 @@ function page (){
           />
 
            <div className='flex flex-col md:w-[1100px] w-full md:mt-20 mt-5'>
-            <div className='text-[20px] text-[#474B53] font-semibold'>바른염색 창업컨설팅</div>
+            <div className='text-[20px] text-[#9fb751] font-semibold'>바른염색 창업컨설팅</div>
             <div className='text-[15px] text-[#333333] mt-10'>
               <p>
                   성공적인&nbsp;창업의&nbsp;첫걸음을&nbsp;함께합니다!

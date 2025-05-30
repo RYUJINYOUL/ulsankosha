@@ -15,7 +15,7 @@ function page (){
         <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
              <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
-          <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#474b53] text-[#000000]'>이용안내</div>
+          <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#9fb751] text-[#000000]'>이용안내</div>
           <hr className="mt-1 h-0.5 md:bg-[#7f88e8] bg-white border-t-0 bg-neutral-700 opacity-100 w-[70px] dark:opacity-50"/>
        </div>
        <div className='flex flex-col md:h-[40px] h-[10px] justify-end'>
@@ -37,7 +37,7 @@ function page (){
                <div className='flex flex-col'>
                <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
                    <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
-                   <div className='text-start font-semibold text-[20px] text-[#474b53]'>개인시설</div>
+                   <div className='text-start font-semibold text-[20px] text-[#9fb751]'>개인시설</div>
                    <hr className="mt-1 h-0.5 md:bg-[#7f88e8] bg-white border-t-0 bg-neutral-700 opacity-100 w-[110px] dark:opacity-50"/>
                 </div>
                 </div>
@@ -159,7 +159,7 @@ function page (){
                        <div className='flex flex-col'>
                        <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
                            <div className='lg:px-0 px-3 flex flex-col md:h-[40px] h-[20px] justify-end'>
-                           <div className='lg:text-start font-semibold text-center text-[20px] text-[#474b53]'>공용시설</div>
+                           <div className='lg:text-start font-semibold text-center text-[20px] text-[#9fb751]'>공용시설</div>
                            <hr className="mt-1 h-0.5 md:bg-[#7f88e8] bg-white border-t-0 bg-neutral-700 opacity-100 w-[70px] dark:opacity-50"/>
                         </div>
                         </div>

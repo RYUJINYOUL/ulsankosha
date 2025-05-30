@@ -40,8 +40,8 @@ const Mapping = () => {
       <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
-          <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#474b53] text-[#000000]'>오시는길</div>
-          <hr className="mt-1 h-0.5 md:block hidden bg-[#474b53] border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
+          <div className='lg:text-start font-semibold text-center text-[20px] md:text-[#9fb751] text-[#000000]'>오시는길</div>
+          <hr className="mt-1 h-0.5 md:block hidden bg-[#9fb751] border-t-0 opacity-100 w-[70px] dark:opacity-50"/>
        </div>
        <div className={cn('flex flex-col md:h-[40px] h-[20px] justify-end', pathname === "/map"&&'hidden')}>
           <div className={cn('lg:text-end md:block hidden text-center text-[14px]', pathname === "/map"&&'hidden')}
@@ -69,15 +69,15 @@ const Mapping = () => {
         <div className='flex flex-col'>
           <div className='lg:text-start text-center text-[15px]'>울산 건설기초안전보건교육장</div>
           <div className='mt-1' />
-          <div className='lg:text-start font-semibold text-[#474b53] text-center text-[26px]'>울산광역시 남구 삼산로57(신정동 661-10), 윤영빌딩 4층</div>
+          <div className='lg:text-start font-semibold text-[#9fb751] text-center text-[26px]'>울산광역시 남구 삼산로57(신정동 661-10), 윤영빌딩 4층</div>
           <div className='mt-8' />
         </div>
         <div className='flex flex-row gap-2'>
-          <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#474b53] text-white'>
+          <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#9fb751] text-white'>
           <HiArrowTurnRightUp className='text-[20px]'/>
           <div className='text-white' onClick={() => {window.open("http://map.naver.com/?menu=route&elat=35.5342102&elng=129.313858&eText=%EC%9A%B8%EC%82%B0+%EA%B1%B4%EC%84%A4%EA%B8%B0%EC%B4%88%EC%95%88%EC%A0%84%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%9C%A1%EC%9E%A5&mapMode=0&pathType=1&dtPathType=0")}}>길찾기</div>
           </div>
-          <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#474b53] text-white'>
+          <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px] p-2 bg-[#9fb751] text-white'>
           <CiMap className='text-[20px]'/>
           <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EC%9A%B8%EC%82%B0%20%EA%B1%B4%EC%84%A4%EA%B8%B0%EC%B4%88%EC%95%88%EC%A0%84%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%9C%A1%EC%9E%A5&lng=129.313858&lat=35.5342102&zoom=15&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
           </div>
@@ -274,11 +274,11 @@ const Mapping = () => {
 
     <section className='md:hidden block'>
     <div className='flex flex-row gap-2'>
-          <div className='flex rounded-md flex-row gap-1.5 lg:text-start text-center text-[12px] p-2 bg-[#474b53] text-white'>
+          <div className='flex rounded-md flex-row gap-1.5 lg:text-start text-center text-[12px] p-2 bg-[#9fb751] text-white'>
           <HiArrowTurnRightUp className='text-[15px]'/>
           <div className='text-white' onClick={() => {window.open("http://map.naver.com/?menu=route&elat=35.5342102&elng=129.313858&eText=%EC%9A%B8%EC%82%B0+%EA%B1%B4%EC%84%A4%EA%B8%B0%EC%B4%88%EC%95%88%EC%A0%84%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%9C%A1%EC%9E%A5&mapMode=0&pathType=1&dtPathType=0")}}>길찾기</div>
           </div>
-          <div className='flex flex-row gap-1.5 rounded-md lg:text-start text-center text-[12px] p-2 bg-[#474b53] text-white'>
+          <div className='flex flex-row gap-1.5 rounded-md lg:text-start text-center text-[12px] p-2 bg-[#9fb751] text-white'>
           <CiMap className='text-[15px]'/>
           <div className='text-white' onClick={() => {window.open("https://map.naver.com/p?title=%EC%9A%B8%EC%82%B0%20%EA%B1%B4%EC%84%A4%EA%B8%B0%EC%B4%88%EC%95%88%EC%A0%84%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%9C%A1%EC%9E%A5&lng=129.313858&lat=35.5342102&zoom=15&type=0&c=15.00,0,0,0,dh")}}>지도에서 보기</div>
           </div>

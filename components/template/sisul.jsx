@@ -35,8 +35,8 @@ const Sisul = () => {
                 <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
                   <div className='flex flex-row gap-2'>
                      <div className='lg:px-0 flex flex-col h-[40px] justify-end'>
-                      <div className='md:text-start font-semibold text-center text-[20px] md:text-[#474b53] text-[#000000]'>소개</div>
-                      <hr className="mt-1 h-0.5 md:block hidden bg-[#474b53] border-t-0 opacity-100 w-[40px] dark:opacity-50"/>
+                      <div className='md:text-start font-semibold text-center text-[20px] md:text-[#9fb751] text-[#000000]'>소개</div>
+                      <hr className="mt-1 h-0.5 md:block hidden bg-[#9fb751] border-t-0 opacity-100 w-[40px] dark:opacity-50"/>
                   </div>
                   </div>
                 <hr className="mt-1 h-0.5 md:bg-[#7f88e8] bg-white border-t-0 opacity-100 w-[70px] dark:opacity-50"/>

@@ -10,9 +10,9 @@ import { usePathname } from 'next/navigation'
 
 
 const scrollMap = {
-  "/map": [0, 0],
-  "/si": [50, 0],
-  "/so": [150, 0],
+  "/si": [0, 0],
+  "/map": [50, 0],
+  "/cal": [150, 0],
   "/ta": [200, 0],
 };
 

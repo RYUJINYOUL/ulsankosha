@@ -32,8 +32,8 @@ const Question = () => {
       <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 pb-1 flex flex-col h-[40px] justify-end'>
-            <div className='md:text-start font-semibold text-center text-[20px] md:text-[#474b53] text-[#000000]'>자주묻는질문</div>
-            <hr className="mt-1 h-0.5 md:bg-[#474b53] bg-[#474b53] border-t-0 opacity-100 w-[105px] dark:opacity-50"/>
+            <div className='md:text-start font-semibold text-center text-[20px] md:text-[#9fb751] text-[#000000]'>자주묻는질문</div>
+            <hr className="mt-1 h-0.5 md:bg-[#9fb751] bg-[#9fb751] border-t-0 opacity-100 w-[105px] dark:opacity-50"/>
           </div>
        <div className='flex flex-col md:h-[40px] h-[10px] justify-end'>
           <div className='lg:text-end md:block hidden text-center text-[14px]' onClick={() => {onClickCategory("자주묻는질문" ,"/so")}}>더보기 &nbsp;&gt;</div>
@@ -51,7 +51,7 @@ const Question = () => {
                   <div className='flex flex-row gap-30'>
                     <div className='flex flex-col gap-1.5 lg:text-start text-center text-[15px]'>
                   
-                    <div className='text-[#474b53] truncate text-[20px]'>현재 진행중인 할인 이벤트가 있나요?</div>
+                    <div className='text-[#9fb751] truncate text-[20px]'>현재 진행중인 할인 이벤트가 있나요?</div>
                     <div className='text-[#999999] truncate text-[15px]'>리뉴얼기념, 첫 달 15만원 이벤트 진행중입니다!</div>
                   </div>
                    
@@ -68,7 +68,7 @@ const Question = () => {
                     <div className='flex flex-row gap-1.5 lg:text-start text-center text-[15px]'>
                   <div className='flex flex-col gap-1.5 lg:text-start text-center text-[15px]'>
                   
-                    <div className='text-[#474b53 truncate text-[20px]'>현재 입주가능한 방이 있나요?</div>
+                    <div className='text-[#9fb751 truncate text-[20px]'>현재 입주가능한 방이 있나요?</div>
                     <div className='text-[#333333] truncate text-[15px]'>현재 입주가능한 방 목록은 전화주시거나 홈페이지에 입실문의를 남겨주시면 자세하게 안내해드리고 있습니다.</div>
                   </div>
                     </div>

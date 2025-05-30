@@ -33,7 +33,7 @@ const FabButton = () => {
         {openSubMenu && (
           <ul>
            <a href="tel:01074964899">
-           <button className="bg-[#474b53] flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
+           <button className="bg-[#9fb751] flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110">
             <CiPhone className="w-7 h-7" />
            </button>
           </a>
@@ -51,7 +51,7 @@ const FabButton = () => {
           </a> */}
   
 
-          <button className="bg-[#474b53] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
+          <button className="bg-[#9fb751] mt-3 flex items-center justify-center w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
           onClick={() => {onClickCategory("오시는 길" ,"/map")}}>
             <LuMapPin className="w-6 h-6" />
            </button>
@@ -83,7 +83,7 @@ const FabButton = () => {
           </ul>
         )}
       {/* </div> */}
-      <button className="bg-[#474b53] w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" onClick={shownSubMenuHandler}>
+      <button className="bg-[#9fb751] w-13 h-13 xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" onClick={shownSubMenuHandler}>
         {openSubMenu ? <h1>{"x"}</h1> : <h1>{"+"}</h1>}
       </button>
 

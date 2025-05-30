@@ -66,9 +66,9 @@ const Header2 = ({children}) => {
 
        <PagePadding>  
    <section className={cn('absolute w-full top-0 left-0 flex md:h-[62px] h-[55px] z-10 items-start md:justify-center', 
-    isScrolled&&"md:bg-white bg-[#474b53]", 
+    isScrolled&&"md:bg-white bg-[#9fb751]", 
     homeCategory === "시설안내"&&"lg:h-[101px] h-[100px]",
-    pathname !== "/"&&"md:bg-white bg-[#474b53]"
+    pathname !== "/"&&"md:bg-white bg-[#9fb751]"
     )}>
       
    <div className='flex flex-col'>

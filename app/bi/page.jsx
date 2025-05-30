@@ -43,7 +43,7 @@ function page (){
            </div>
 
            <div className='flex flex-col md:w-[1100px] w-full md:mt-20 mt-5'>
-            <div className='text-[20px] text-[#474B53] font-semibold'>염색전문점의 비전</div>
+            <div className='text-[20px] text-[#9fb751] font-semibold'>염색전문점의 비전</div>
             <div className='text-[15px] text-[#333333] mt-10'>
               <p>
                 염색&nbsp;전문점은&nbsp;미용업계에서&nbsp;독특한&nbsp;위치를&nbsp;차지하며,&nbsp;미래의&nbsp;성장&nbsp;가능성이&nbsp;큰&nbsp;분야&nbsp;중&nbsp;하나입니다.&nbsp;

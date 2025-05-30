@@ -31,8 +31,8 @@ const ImageGallery = () => {
           <div className='flex flex-col'>
           <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
               <div className='lg:px-0 px-3 flex flex-col md:h-[40px] h-[0px] justify-end'>
-              <div className='lg:text-start md:block hidden font-semibold text-center text-[20px] text-[#474b53]'>이미지 갤러리</div>
-              <hr className="mt-1 h-0.5 md:text-[#474b53] bg-[#474b53] border-t-0 opacity-100 w-[110px] dark:opacity-50"/>
+              <div className='lg:text-start md:block hidden font-semibold text-center text-[20px] text-[#9fb751]'>이미지 갤러리</div>
+              <hr className="mt-1 h-0.5 md:text-[#9fb751] bg-[#9fb751] border-t-0 opacity-100 w-[110px] dark:opacity-50"/>
            </div>
            <div className='flex flex-col md:h-[40px] h-[0px] justify-end'>
               <div className='lg:text-end md:block hidden text-center text-[14px]' ></div>
