@@ -48,7 +48,7 @@ return (
                   
                 <div className='mt-5'/>  
                         
-                        <a href='https://m.search.naver.com/search.naver?query=%EC%9A%B8%EC%82%B0+%EA%B1%B4%EC%84%A4+%EA%B8%B0%EC%B4%88%EC%95%88%EC%A0%84%EB%B3%B4%EA%B1%B4%EA%B5%90%EC%9C%A1%EC%9E%A5%40' target='_blank'>
+                        <a href='https://m.place.naver.com/place/1148432314/home?entry=pll' target='_blank'>
                         <li className='text-[#959595] p-2 text-[13px] border-1 border-[#9d9d9d]'>
                           <span className="item_title">울산 건설 기초안전보건교육장@ </span>
                         </li>

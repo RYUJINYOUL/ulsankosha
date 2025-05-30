@@ -84,7 +84,7 @@ return (
          {/* 지도 끝 */}
     
 
-    <div className='md:mb-0 mb-4'></div>
+
     <section className='md:hidden block'>
           <hr className="h-2.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 md:w-[1000px] w-screen"/>
       </section>   
@@ -95,7 +95,7 @@ return (
          {/* 입실문의 끝 */}
    
 
-
+    <div className='md:mt-0 mt-4' />
     <section className='md:hidden block'>
           <hr className="h-2.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 md:w-[1000px] w-screen"/>
       </section>   

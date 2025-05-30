@@ -2,7 +2,10 @@
 
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
+import { cn } from "@/lib/utils";
 import 'dayjs/locale/ko';
+import { useRouter } from "next/navigation";
+import useUIState from "@/hooks/useUIState";
 import {
   getFirestore,
   collection,
@@ -28,6 +31,7 @@ const CalendarWithEvents = () => {
   const [selectedDate, setSelectedDate] = useState(dayjs());
   const [events, setEvents] = useState([]);
   const pathname = usePathname()
+  const { push } = useRouter();
   const [newEvent, setNewEvent] = useState({ time: '' });
   const [eventDates, setEventDates] = useState([]);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,7 +40,7 @@ const CalendarWithEvents = () => {
     phone: '',
     time: '',
   });
-
+  const { homeCategory, setHomeCategory, setHeaderImageSrc, headerImageSrc} = useUIState();
   const predefinedTimes = [
     '교육 없음',
     '오전 9:00~13:00(4시간)',
@@ -90,7 +94,10 @@ const CalendarWithEvents = () => {
   // }, [selectedDate]);
 
 
-
+const onClickCategory = (item) => {
+      setHomeCategory(item);
+      push('/cal', {scroll: false})
+  };
 
  const fetchEventsForMonth = () => {
     const start = startOfMonth.format('YYYY-MM-DD');
@@ -251,7 +258,10 @@ const CalendarWithEvents = () => {
                     return (
                       <td
                         key={dateStr}
-                        onClick={() => setSelectedDate(date)}
+                        onClick={() => 
+                          pathname==='/'
+                          ? onClickCategory("교육일정")
+                          : setSelectedDate(date)}
                         className={`align-top p-2 md:h-20 h-16 border border-gray-200 cursor-pointer
                           ${isCurrentMonth ? 'text-black' : 'text-gray-400'}
                           ${isToday ? 'bg-blue-100' : ''}
@@ -297,7 +307,7 @@ const CalendarWithEvents = () => {
       </div>
 
       {/* Event list and Add Form */}
-      <div className="w-full max-w-[1100px] ">
+      <div className={cn("w-full max-w-[1100px]", pathname === "/"&&'hidden')}>
         <h3 className="text-lg font-semibold mb-2">
           {selectedDate.format('YYYY년 MM월 DD일')}
         </h3>

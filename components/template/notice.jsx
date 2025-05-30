@@ -85,7 +85,7 @@ const Notice = () => {
 
 
   return (
-    <section className='flex flex-col md:justify-center justify-start md:items-center items-start'>
+    <section className='flex flex-col md:justify-center justify-start md:items-center items-start mt-4'>
          <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
@@ -126,7 +126,7 @@ const Notice = () => {
           <div className='flex flex-col'>
        </div>
 
-         <div className='mt-7' />
+         <div className='md:mt-7 mt-3' />
         <div className='flex flex-col md:w-[530px] w-full px-3'>
           <div className='md:hidden flex flex-col h-[40px] justify-end'>
           <hr className="mt-1 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50 w-full"/>
