@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState, useMemo } from "react";
 import { Phone, MapPin, Share2, MessageCircle, MessageSquare } from "lucide-react";
-
+import useUIState from "@/hooks/useUIState";
 import {
   Carousel,
   CarouselContent,
@@ -9,6 +9,7 @@ import {
   CarouselApi,
 } from "./ui/carousel";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface GalleryProps {
   images: string[];
@@ -18,8 +19,15 @@ const Gallery3 = () => {
   const [mainApi, setMainApi] = useState<CarouselApi>();
   const [thumbnailApi, setThumbnailApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  const { homeCategory, setHomeCategory, setHeaderImageSrc, headerImageSrc} = useUIState();
+  const { push } = useRouter();
+  
 
 
+  const onClickCategory = (item:any, src:any) => {
+      setHomeCategory(item);
+      push(src, {scroll: false})
+  };
  
 
   return (
@@ -66,7 +74,7 @@ const Gallery3 = () => {
             
 
                <div className="md:hidden grid grid-cols-4 p-4 text-center">
-                  <a href="tel:050714820070" className="flex flex-col items-center hover:text-blue-400">
+                  <a href="tel:052-988-0070" className="flex flex-col items-center hover:text-blue-400">
                      <button className="bg-[#9fb751] mb-1 flex items-center justify-center w-[44px] h-[44px] xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
                     >
                     <Phone className="w-4 h-4 text-white" />
@@ -74,7 +82,7 @@ const Gallery3 = () => {
                     <span className="text-[13px] text-[rgba(255,255,255,.7)]">전화문의</span>
                   </a>
 
-                  <a href="/map" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-blue-400">
+                  <a onClick={() => {onClickCategory('오시는길', '/map')}} rel="noopener noreferrer" className="flex flex-col items-center hover:text-blue-400">
                      <button className="bg-[#9fb751] mb-1 flex items-center justify-center w-[44px] h-[44px] xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
                     >
                     <MapPin className="w-4 h-4 text-white" />
@@ -82,7 +90,7 @@ const Gallery3 = () => {
                     <span className="text-[13px] text-[rgba(255,255,255,.7)]">오시는길</span>
                   </a>
 
-                  <a href="/so" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:text-blue-400">
+                  <a onClick={() => {onClickCategory('교육일정', '/cal')}} rel="noopener noreferrer" className="flex flex-col items-center hover:text-blue-400">
                      <button className="bg-[#9fb751] mb-1 flex items-center justify-center w-[44px] h-[44px] xs:w-11 xs:h-11 text-white rounded-full shadow-lg transition-transform hover:scale-110" 
                     >
                     <MapPin className="w-4 h-4 text-white" />
