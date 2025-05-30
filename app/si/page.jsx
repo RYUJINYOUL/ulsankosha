@@ -5,14 +5,14 @@ import Footer from '@/components/template/Footer'
 function page (){
   return (
     <div>
-    <div className='md:my-25 my-15 p-3.5'>
+    <div className='md:my-25 mt-15 p-3.5'>
       <section className='flex flex-col justify-center items-center'>
     
           <div className='flex flex-col'>
       <div className='flex md:flex-row flex-col md:justify-between items-start lg:w-[1100px] w-screen'>
           <div className='lg:px-0 px-3 flex flex-col h-[40px] justify-end'>
           <div className='lg:text-start font-semibold text-center text-[20px]'>안내</div>
-          <hr className="mt-1 h-0.5 md:bg-neutral-700 border-t-0 bg-neutral-700 opacity-100 w-[40px] dark:opacity-50"/>
+          <hr className="mt-1 h-0.5  md:block hidden md:bg-neutral-700 border-t-0 bg-neutral-700 opacity-100 w-[40px] dark:opacity-50"/>
        </div>
        <div className='flex flex-col md:h-[40px] h-[20px] justify-end'>
           <div className='lg:text-end md:block hidden text-center text-[14px]'></div>
@@ -20,7 +20,7 @@ function page (){
        </div>
        </div>
        </div>
-        <div className='mt-5' />
+        <div className='md:mt-5' />
           <Image
             alt="mediaItem"
             className="object-contain"
@@ -63,13 +63,9 @@ function page (){
             </div>
           </div>
 
-        
-           <div className='mt-7' />
     
       
        </section>
-
-       <div className='h-[150px]'/>
       
        </div>
         <Footer />

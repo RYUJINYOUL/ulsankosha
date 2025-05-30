@@ -52,6 +52,7 @@ const CalendarWithEvents = () => {
   ];
 
   const days = ['일', '월', '화', '수', '목', '금', '토'];
+  const days2 = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
   const startOfMonth = currentDate.startOf('month');
   const endOfMonth = currentDate.endOf('month');
   const startDate = startOfMonth.startOf('week');
@@ -208,13 +209,14 @@ const CalendarWithEvents = () => {
       {/* Calendar Table */}
       <div className="w-full overflow-x-auto">
         <div className="mx-auto max-w-[1100px] w-full">
-          <table className="table-fixed w-full border-collapse text-sm">
+          <table className="table-fixed w-full border-collapse">
             <thead>
-              <tr className="bg-gray-100">
+              {isMobile 
+               ? <tr className="bg-gray-100 border-b">
                 {days.map((day, idx) => (
                   <th
                     key={day}
-                    className={`p-2 border-b border-gray-300 font-semibold ${
+                    className={`p-2 border text-center border-gray-200 font-semibold ${
                       idx === 0 ? 'text-red-500' : idx === 6 ? 'text-blue-500' : ''
                     }`}
                   >
@@ -222,6 +224,19 @@ const CalendarWithEvents = () => {
                   </th>
                 ))}
               </tr>
+              : <tr className="bg-gray-100 border-b">
+                {days2.map((day, idx) => (
+                  <th
+                    key={day}
+                    className={`p-2 border text-center border-gray-200 font-semibold ${
+                      idx === 0 ? 'text-red-500' : idx === 6 ? 'text-blue-500' : ''
+                    }`}
+                  >
+                    {day}
+                  </th>
+                ))}
+              </tr>
+                }
             </thead>
             <tbody>
               {Array.from({ length: Math.ceil(dates.length / 7) }).map((_, weekIdx) => (
@@ -282,9 +297,9 @@ const CalendarWithEvents = () => {
       </div>
 
       {/* Event list and Add Form */}
-      <div className="w-full max-w-[1100px] border-t ">
+      <div className="w-full max-w-[1100px] ">
         <h3 className="text-lg font-semibold mb-2">
-          {selectedDate.format('YYYY년 MM월 DD일')} 일정
+          {selectedDate.format('YYYY년 MM월 DD일')}
         </h3>
 
         {/* Add Event Form (관리자만 보임) */}
